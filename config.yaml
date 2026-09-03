@@ -1,0 +1,9 @@
+# JARVIS execution manifest — this repo runs with a single command: sh run.sh
+name: sherlock
+runtime:
+  image: python:3.12-slim
+  command: ["sh", "run.sh"]
+  network: true
+resources:
+  memory_mb: 512
+  cpu: 1.0
